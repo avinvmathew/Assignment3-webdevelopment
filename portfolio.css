@@ -1,0 +1,172 @@
+body{
+    display: flexbox;
+}
+
+.full-page {
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    flex-wrap: nowrap;
+  }
+
+.left-pane
+{
+    background-color: #6A9C89;
+    width: 25%;
+    overflow: auto;
+    height: 100vh;
+    position: fixed;
+    /* transition: background-color 0.3s ease-in-out; */
+}
+/* .profimg:hover + .left-pane {
+    background-color: #ef0808; 
+  } */
+.main-name
+{
+    
+}
+.devtxt
+{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.right-pane
+{
+    background-color: #C4DAD2;
+    width: 75%;
+    overflow-y: auto;
+    height: 100vh;
+    margin-left: 25%;
+}
+
+.profimg
+{
+    /* margin: 5%; */
+    display: block;
+    /* align-items: center;
+    justify-content: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    border-radius: 50%;
+}
+.lcontent
+{
+    text-align: center;
+}
+
+.greetbtn
+{
+    padding: 10px 22px;
+    margin: 4px 8px;
+}
+
+.rcontent
+{
+    margin: 10px;
+}
+
+.aboutme,.bucketlist,.favmovie,.favsong
+{
+    background-color: #538392;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+table,th,td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+.bucketlist table {
+    width: 80%;
+    margin: 0 auto;
+}
+th
+{
+    background-color: rgb(101, 101, 61);
+}
+tr
+{
+    background-color: #E9EFEC;
+}
+
+h2 {
+    --a: -45deg; /* control the angle */
+    --t: .23em; /* thickness of the underline */ 
+    color: #181716;
+  }
+  
+  h2 span {
+    --_s: calc(var(--t)*cos(var(--a)));
+    background:
+      linear-gradient(var(--a),#0000 var(--_s),currentColor 0 calc(100% - var(--_s)),#0000 0) 
+      bottom/var(--i,90%) var(--t) no-repeat;
+    padding: 0 .15em calc(var(--t) + .1em);
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    transition: .3s;
+    cursor: pointer;
+  }
+  h2:hover span {
+    --i: 100%;
+  }
+  
+  h2 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;
+  }
+
+footer
+{
+    background-color: #E9EFEC;
+    text-align: center;
+}
+/* .bottom
+{
+
+} */
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #e33787;
+    color: white;
+  }
+   /* Twitter */
+   .fa-github {
+    background: black;
+    color: white;
+}
